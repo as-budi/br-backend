@@ -1,0 +1,67 @@
+###
+//Create a user
+POST http://localhost:3001/user
+Content-Type: application/json
+
+{
+    "name": "Budi",
+    "email": "admin1@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "admin"
+}
+
+###
+//Create a user
+POST http://localhost:3001/user
+Content-Type: application/json
+
+{
+    "name": "Tono",
+    "email": "admin2@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "admin"
+}
+
+###
+//Create a user
+POST http://localhost:3001/user
+Content-Type: application/json
+
+{
+    "name": "Joni",
+    "email": "joni@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "user"
+}
+
+###
+//Get all users
+GET http://localhost:3001/users
+
+###
+//Get single user (Budi)
+GET http://localhost:3001/user/c15e4287-f058-4b76-9db4-1e9d80812918
+
+###
+//Get single user (Tono)
+GET http://localhost:3001/user/0842907c-0232-4325-8159-2f14bad244d0
+
+###
+//Update a user
+PATCH  http://localhost:3001/user/0842907c-0232-4325-8159-2f14bad244d0
+Content-Type: application/json
+
+{
+    "name": "Tono",
+    "email": "tono@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "user"
+}
+
+###
+//Delete a user
+DELETE http://localhost:3001/user/55d20b8d-6513-439a-bf7a-848bd751b373

@@ -1,0 +1,32 @@
+###
+//Create bike
+POST http://localhost:3001/bike
+Content-Type: application/json
+
+{
+    "tag": "123456789e",
+    "parkingLotId": 5
+}
+
+###
+//Get parking lots
+GET http://localhost:3001/bikes
+
+###
+//Get parking lots by id
+GET http://localhost:3001/bike/241d8c15-a31d-4148-82ab-bec66647309b
+
+###
+//Update parking lots
+PATCH http://localhost:3001/bike/5a773c35-8a71-4484-9430-bf6e36e77405
+Content-Type: application/json
+
+{
+    "tag": "123456789b",
+    "parkingLotId": 1,
+    "status": 1
+}
+
+###
+//Delete parking lots
+DELETE http://localhost:3001/bike/142981d4-4fef-4bce-a5b0-62b5f5ce85e3
