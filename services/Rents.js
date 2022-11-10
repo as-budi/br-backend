@@ -30,3 +30,23 @@ export const getRentById = async(req, res) =>{
 export const getRents = async(req, res) =>{
 
 }
+
+export const rentRequest = async(req, res) =>{
+
+}
+
+export const rentConfirm = async(req, res) =>{
+
+}
+
+export const rentStart = async(req, res) =>{
+
+}
+
+export const rentFinish = async(req, res) =>{
+
+}
+
+export const rentFinishConfirm = async(req, res) =>{
+
+}

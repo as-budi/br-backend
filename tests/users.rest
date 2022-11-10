@@ -30,8 +30,8 @@ POST http://localhost:3001/user
 Content-Type: application/json
 
 {
-    "name": "Joni",
-    "email": "joni@gmail.com",
+    "name": "Wati",
+    "email": "wati@gmail.com",
     "password": "123456",
     "confPassword": "123456",
     "role": "user"

@@ -4,7 +4,12 @@ import {
     updateRent,
     deleteRent,
     getRentById,
-    getRents
+    getRents,
+    rentRequest,
+    rentConfirm,
+    rentStart,
+    rentFinish,
+    rentFinishConfirm
 } from "../services/Rents.js"
 import { verifyUser, adminOnly } from "../middleware/AuthUser.js";
 
@@ -15,5 +20,10 @@ router.patch('/rent/:id', verifyUser, updateRent);
 router.delete('/rent/:id', verifyUser, adminOnly, deleteRent);
 router.get('/rent/:id', verifyUser, getRentById);
 router.get('/rents', verifyUser, getRents);
+router.get('/rent-request/:id', verifyUser, rentRequest);
+router.post('/rent-confirm', verifyUser, rentConfirm);
+router.post('/rent-start', verifyUser, rentStart);
+router.post('/rent-finish', verifyUser, rentFinish);
+router.post('/rent-finish-confirm', verifyUser, rentFinishConfirm);
 
 export default router;

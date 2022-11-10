@@ -4,7 +4,7 @@ POST http://localhost:3001/lot
 Content-Type: application/json
 
 {
-    "location": 1
+    "location": 2
 }
 
 ###

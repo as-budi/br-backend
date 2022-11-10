@@ -29,6 +29,13 @@ const store = new sessionStore({
 // Sinkronisasi session store ke database
 // store.sync();
 
+try {
+    await db.authenticate();
+    console.log('Database Connected...!');
+} catch (error) {
+    console.log(error);
+}
+
 app.use(session({
     secret: process.env.SESS_SECRET,
     resave: false,
