@@ -1,8 +1,0 @@
-###
-//Create parking lots
-POST http://localhost:3001/rent
-Content-Type: application/json
-
-{
-    "bikeId": 1
-}
